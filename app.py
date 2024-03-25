@@ -16,7 +16,11 @@ toolbar = DebugToolbarExtension(app)
 
 # Connect to the database and create all tables
 connect_db(app)
-db.create_all()
+
+
+# Create all database tables
+with app.app_context():
+    db.create_all()
 
 # Define a route for the homepage
 @app.route('/')
