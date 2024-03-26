@@ -1,0 +1,11 @@
+/* Add margin and padding to badges */
+.badge {
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+/* Customize badge background and text color */
+.badge-primary {
+    background-color: #007bff;
+    color: #fff;
+}
